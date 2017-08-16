@@ -1,2 +1,2 @@
 # gem-fimfiction
-Unofficial Fimfiction API abstraction for Ruby
+Unofficial Fimfiction API wrapper for Ruby

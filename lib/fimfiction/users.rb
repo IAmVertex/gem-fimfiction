@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Users
+	class Users
 		def self.get_user(id)
 			puts "get_user ok"
 		end

@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Followers
+	class Followers
 		def self.get_following(id)
 			puts "get_following ok"
 		end

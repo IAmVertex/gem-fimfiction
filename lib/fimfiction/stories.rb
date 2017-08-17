@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Stories
+	class Stories
 		def self.get_stories
 			puts "get_stories ok"
 		end

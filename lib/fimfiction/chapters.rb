@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Chapters
+	class Chapters
 		def self.get_chapter(id)
 			puts "get_chapter ok"
 		end

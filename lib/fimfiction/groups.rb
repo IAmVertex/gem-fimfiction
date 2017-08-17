@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Groups
+	class Groups
 		def self.get_group(id)
 			puts "get_group ok"
 		end

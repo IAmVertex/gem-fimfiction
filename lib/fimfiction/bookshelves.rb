@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module Bookshelves
+	class Bookshelves
 		def self.get_bookshelves
 			puts "get_bookshelves ok"
 		end

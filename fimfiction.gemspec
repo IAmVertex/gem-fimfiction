@@ -14,4 +14,6 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0.0")
   s.files = Dir.glob("{lib}/**/*") + %w(LICENSE README.md ROADMAP.md CHANGELOG.md)
+
+  s.add_dependency(%q<rest-client>.freeze, [">= 0"])
 end

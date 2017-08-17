@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
-	module PMs
+	class PMs
 		def self.get_pms
 			puts "get_pms ok"
 		end

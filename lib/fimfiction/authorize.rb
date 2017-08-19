@@ -1,6 +1,21 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
+  # Authorization Class
   class Authorize
+    # Returns a :String with the Token, using your client credentials.
+    #
+    # == Parameters:
+    # client_id::
+    #   String - Your Client ID. You can find it in Application Management.
+    # client_secret::
+    #   String - Your Client Secret. You can find it in Application Management.
+    #
+    # == Returns:
+    # A string containing the Token if successful. Raises an exception otherwise.
+    #
+    # == Example:
+    #   authToken = Fimfiction::Authorize.get_token("CLIENT_ID","CLIENT_SECRET")
+    #
     def self.get_token(client_id, client_secret)
       reqParams = {
         :client_id => client_id,

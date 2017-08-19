@@ -1,8 +1,7 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Chapters
-    @token = nil
-
+    # @!visibility private
     def initialize(token)
       raise Fimfiction::TokenNotProvided unless !token.to_s.empty?
       @token = token

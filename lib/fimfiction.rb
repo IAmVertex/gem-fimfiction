@@ -14,4 +14,5 @@ module Fimfiction
   require "fimfiction/Stories"
   require "fimfiction/Tags"
   require "fimfiction/Users"
+  require "fimfiction/Utils"
 end

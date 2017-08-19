@@ -1,11 +1,12 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
+  #Error handling - Exceptions class
   class Error
-    @token = nil
-
+    # @!visibility private
     def initialize(token)
       @token = token
     end
+
     def check(code)
       case code
       when 4001
@@ -57,29 +58,73 @@ module Fimfiction
       end
     end
   end
-
+  
+  # @!visibility private
   class TokenNotProvided < StandardError; end
-
+  
+  # @!visibility private
   class InvalidBody < StandardError; end
+  
+  # @!visibility private
   class InvalidInclude < StandardError; end
+  
+  # @!visibility private
   class InvalidPermission < StandardError; end
+  
+  # @!visibility private
   class MissingScope < StandardError; end
+  
+  # @!visibility private
   class InvalidToken < StandardError; end
+  
+  # @!visibility private
   class ResourceNotFound < StandardError; end
+  
+  # @!visibility private
   class InvalidApplication < StandardError; end
+  
+  # @!visibility private
   class EndpointMissing < StandardError; end
+  
+  # @!visibility private
   class MissingParameter < StandardError; end
+  
+  # @!visibility private
   class InvalidArgument < StandardError; end
+  
+  # @!visibility private
   class IncorrectSecret < StandardError; end
+  
+  # @!visibility private
   class InvalidGrantType < StandardError; end
+  
+  # @!visibility private
   class MissingAuthorizationHeader < StandardError; end
+  
+  # @!visibility private
   class InvalidAttributes < StandardError; end
+  
+  # @!visibility private
   class UnsupportedAttribute < StandardError; end
+  
+  # @!visibility private
   class InvalidFilter < StandardError; end
+  
+  # @!visibility private
   class InvalidPagination < StandardError; end
+  
+  # @!visibility private
   class MalformedAuthorizationHeader < StandardError; end
+  
+  # @!visibility private
   class InvalidAttribute < StandardError; end
+  
+  # @!visibility private
   class InvalidSortField < StandardError; end
+  
+  # @!visibility private
   class MalformedSortField < StandardError; end
+  
+  # @!visibility private
   class RateLimited < StandardError; end
 end

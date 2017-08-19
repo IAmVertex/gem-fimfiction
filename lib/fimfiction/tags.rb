@@ -1,7 +1,13 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Tags
-    def self.get_tags
+    @token = nil
+
+    def initialize(token)
+      raise Fimfiction::TokenNotProvided unless !token.to_s.empty?
+      @token = token
+    end
+    def get_tags
       puts "get_tags ok"
     end
   end

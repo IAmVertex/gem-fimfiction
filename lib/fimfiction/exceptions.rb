@@ -1,7 +1,12 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Error
-    def self.check(code)
+    @token = nil
+
+    def initialize(token)
+      @token = token
+    end
+    def check(code)
       case code
       when 4001
         return Fimfiction::InvalidBody
@@ -52,6 +57,8 @@ module Fimfiction
       end
     end
   end
+
+  class TokenNotProvided < StandardError; end
 
   class InvalidBody < StandardError; end
   class InvalidInclude < StandardError; end

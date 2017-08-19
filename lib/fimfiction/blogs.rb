@@ -1,24 +1,31 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Blogs
-    def self.get_posts
-      puts "get_posts ok"
+    @token = nil
+
+    def initialize(token)
+      raise Fimfiction::TokenNotProvided unless !token.to_s.empty?
+      @token = token
     end
 
-    def self.get_post(id)
-      puts "get_post ok"
+    def get_posts
+      return "get_posts, token de usuario: " + @token
     end
 
-    def self.create_post
-      puts "create_post ok"
+    def get_post(id)
+      return "get_post, token de usuario: " + @token
     end
 
-    def self.update_post(id)
-      puts "update_post ok"
+    def create_post
+      return "create_post, token de usuario: " + @token
     end
 
-    def self.delete_post(id)
-      puts "delete_post ok"
+    def update_post(id)
+      return "update_post, token de usuario: " + @token
+    end
+
+    def delete_post(id)
+      return "delete_post, token de usuario: " + @token
     end
   end
 end

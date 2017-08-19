@@ -1,19 +1,25 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Users
-    def self.get_user(id)
+    @token = nil
+
+    def initialize(token)
+      raise Fimfiction::TokenNotProvided unless !token.to_s.empty?
+      @token = token
+    end
+    def get_user(id)
       puts "get_user ok"
     end
-    def self.get_stories(id)
+    def get_stories(id)
       puts "get_stories ok"
     end
-    def self.get_posts(id)
+    def get_posts(id)
       puts "get_posts ok"
     end
-    def self.follow(id)
+    def follow(id)
       puts "follow ok"
     end
-    def self.unfollow(id)
+    def unfollow(id)
       puts "unfollow ok"
     end
   end

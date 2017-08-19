@@ -1,25 +1,31 @@
 # -*- encoding: utf-8 -*-
 module Fimfiction
   class Stories
-    def self.get_stories
+    @token = nil
+
+    def initialize(token)
+      raise Fimfiction::TokenNotProvided unless !token.to_s.empty?
+      @token = token
+    end
+    def get_stories
       puts "get_stories ok"
     end
-    def self.get_story(id)
+    def get_story(id)
       puts "get_story ok"
     end
-    def self.create_story
+    def create_story
       puts "create_story ok"
     end
-    def self.update_story(id)
+    def update_story(id)
       puts "update_story ok"
     end
-    def self.delete_story(id)
+    def delete_story(id)
       puts "delete_story ok"
     end
-    def self.get_chapters(id)
+    def get_chapters(id)
       puts "get_chapters ok"
     end
-    def self.create_chapter(id)
+    def create_chapter(id)
       puts "create_chapter ok"
     end
   end

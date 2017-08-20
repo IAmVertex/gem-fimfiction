@@ -71,8 +71,8 @@ module Fimfiction
         request = RestClient::Request.execute(method: :get, url: url, headers: {Authorization: 'Bearer '+@token}, :user_agent => "gem-Fimfiction by Vertex - https://github.com/IAmVertex/gem-fimfiction")
         return JSON.parse(request)
       rescue RestClient::ExceptionWithResponse => e
-        errResponse = JSON.parse(e.response)
-        raise Fimfiction::Error.check(errResponse["errors"][0]["code"]), errResponse["errors"][0]["title"]
+        err_response = JSON.parse(e.response)
+        raise Fimfiction::Error.check(err_response["errors"][0]["code"]), err_response["errors"][0]["title"]
       end
     end
     def get_post(id)

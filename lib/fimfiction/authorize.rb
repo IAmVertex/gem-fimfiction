@@ -26,8 +26,8 @@ module Fimfiction
         reqAuth = RestClient.post('https://www.fimfiction.net/api/v2/token', reqParams, :user_agent => "gem-Fimfiction by Vertex - https://github.com/IAmVertex/gem-fimfiction")
         return JSON.parse(reqAuth)["access_token"]
       rescue RestClient::ExceptionWithResponse => e
-        errResponse = JSON.parse(e.response)
-        raise Fimfiction::Error.check(errResponse["errors"][0]["code"]), errResponse["errors"][0]["title"]
+        err_response = JSON.parse(e.response)
+        raise Fimfiction::Error.check(err_response["errors"][0]["code"]), err_response["errors"][0]["title"]
       end
     end
   end

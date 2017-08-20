@@ -8,7 +8,7 @@ module Fimfiction
       when "Array"
         return URI.escape(element.join(","))
       when "Hash"
-      	parsedUri = ""
+        parsedUri = ""
         element.each do |key, val|
           parsedUri << URI.escape("filter[#{key}]=#{val}&")
         end

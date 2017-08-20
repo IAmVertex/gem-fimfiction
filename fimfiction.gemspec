@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "fimfiction"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.summary = "Simple Fimfiction.net API wrapper"
   s.description = "A simple Fimfiction.net API abstraction wrapper and REST client for Ruby."
   s.authors = ["Vertex"]

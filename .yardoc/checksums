@@ -3,7 +3,7 @@ lib/fimfiction/pms.rb 459534366da0d7a8d4554840a3b526cd7a269c70
 lib/fimfiction/tags.rb bcf36292ae807d4472a489d658480ccb04556e3e
 lib/fimfiction/blogs.rb fcd004b6ba64fc4b769ef1ad4f6090ace6e4eb73
 lib/fimfiction/users.rb c9c0021ddb6fb6aa32ae2d20d56beef34d91da11
-lib/fimfiction/utils.rb 46a51ac6eb5a76bb078504506756a060dcbca9b1
+lib/fimfiction/utils.rb 8545bc61d513e532538aa0b370e16029d43b7390
 lib/fimfiction/groups.rb b65a14dd59e8250e8279e7e5c4ae04bf5f968428
 lib/fimfiction/stories.rb 616d28dc8c089f92d2bf1a784a9fb46b5e0cd7c7
 lib/fimfiction/chapters.rb 480dbf1ef33a39f6bbc629cb215b1386822d89e0
